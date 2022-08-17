@@ -4,9 +4,10 @@ Hello!
 There are 4 projects for Lad.
 
 # 3 and 4 projects are THE MOST interesting
+
 Check it yourself:
-#3    https://willowy-gnome-864679.netlify.app
-#4    https://preeminent-mermaid-6e7eba.netlify.app
+# 3    https://willowy-gnome-864679.netlify.app
+# 4    https://preeminent-mermaid-6e7eba.netlify.app
 
 
 1 and 2 are aimed at js (nothing specific).
@@ -29,7 +30,9 @@ the game is played until the end of the number of moves or before guessing
 
 some screenshots:
 ![image](https://user-images.githubusercontent.com/92570785/185114402-e12cabbb-22c5-40cc-9468-fd32034b43bf.png)
+_____________
 ![image](https://user-images.githubusercontent.com/92570785/185114361-13c52448-adb5-4c41-b6ae-25bfa36c293c.png)
+_____________
 ![image](https://user-images.githubusercontent.com/92570785/185114447-f02b00e4-6cdc-48eb-9059-472c2c4dec60.png)
 
 
@@ -51,6 +54,8 @@ Before the start of the battle, the player chooses the difficulty (the initial h
 
 some screenshots:
 ![image](https://user-images.githubusercontent.com/92570785/185115836-00477f53-4783-4572-b42b-d79dcb316cc6.png)
+_____________
 ![image](https://user-images.githubusercontent.com/92570785/185115870-5439877d-601e-4b52-93bc-731c6c5f7619.png)
+_____________
 ![image](https://user-images.githubusercontent.com/92570785/185115920-dfda5c56-6260-4a11-bcd1-1f052de44ee7.png)
  
