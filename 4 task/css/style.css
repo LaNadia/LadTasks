@@ -1,0 +1,294 @@
+
+
+/* reset */
+@font-face {
+    font-family: "Gwent"; 
+    src: url("./fonts/gwent_extrabold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,body {
+    font-size:  62.5%;
+    font-family: "Gwent";
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit:  contain;
+    flex-shrink: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+span{
+    font-size: 3rem;
+}
+
+/* header */
+
+.header{
+    font-size: 7rem;
+    color: #e7c567;
+    padding: 5rem; 
+    text-align: center;
+}
+
+/* body */ 
+
+html {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal {
+    background-image: url(../img/button-gold-big-hover.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%, -50%); 
+}
+
+.modal__content{
+    font-size: 3rem;
+    padding: 7rem;
+}
+
+.modal__title{
+    margin: auto auto ;
+    text-decoration: underline;
+} 
+
+.btn {
+   height: 3rem;
+   background-color: transparent;
+}
+
+.btn__modal:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+ 
+main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 15%;
+    border: #e7c567 solid;
+    object-fit:cover;
+}
+
+.wrapper {
+    color: #e7c567;
+    font-size: 3rem;
+    display: grid;
+    grid-template-areas:
+    'ms v mg';
+    margin: 10rem;
+}
+
+.versus__monsterAbility {
+    opacity: 0;
+    animation: ani 4s forwards;
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* monster */
+
+.monster{
+    grid-area: ms;
+}
+
+.monster__skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.monster__skills span:nth-child(1){
+    padding-top: 1.5rem;
+    position: relative;  
+}
+
+/* versus */
+
+.versus{
+    margin-top: 10rem;
+    width: 100%;
+    grid-area: v;
+}
+
+.versus__monsterAbility {
+    opacity: 0;
+    animation: ani 4s forwards;
+}
+
+.versus__monsterAbility span, .versus__ability span{
+    text-decoration: underline;
+}
+
+.closed{
+    display: none;
+}
+
+/* mage*/
+
+.mage{
+    grid-area: mg;
+}
+
+.mage__skill-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.skill{
+    padding: 2.5rem 0;
+    border: #e7c567 solid;
+    border-radius: 5%;
+    max-width: 15rem;
+}
+
+.skill button{
+    color: #e7c567;
+    background-color: transparent;
+    width: 100%;
+}
+
+.skill__name{
+    font-size: 2.3rem;
+}
+.skill__info {
+    display: none;
+}
+
+.skill button:hover ~ .skill__info {
+    display:block;
+    font-size: 2rem;
+    width: 100%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skill__info span{
+    font-size: 2rem;
+}
+
+button[disabled] {
+    color: gray;
+};
+
+
+/* response*/
+
+@media (max-width: 1440px) and (min-width:1281px) {
+    html, body{
+        font-size:  45.5%;
+    }
+ 
+}
+
+@media (max-width: 1280px) and (min-width:769px) {
+    html, body{
+        font-size:  42%;
+    }
+
+    .modal__content{
+        padding: 10rem;
+    }
+}
+
+@media (max-width: 768px) and (min-width:376px) {
+    html, body{
+        font-size:  45.5%;
+    }
+    .modal__content{
+        padding: 10rem;
+        font-size: 2rem;
+    }
+
+    .versus{
+        margin: 5rem 0;
+    }
+
+   .wrapper{
+        grid-template-areas:
+        'v v' 
+        'ms mg';
+        margin: 2rem;
+   }
+}
+
+@media (max-width: 375px) {
+    html, body{
+        font-size:  40.5%;
+    }
+
+    .versus{
+        margin: 5rem 0;
+    }
+
+   .wrapper{
+        grid-template-areas:
+        'v v' 
+        'ms mg';
+        margin: 2rem;
+   }
+}
+

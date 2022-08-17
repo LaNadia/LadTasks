@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>4 task</title>
+</head>
+<body>
+    <header class="header"> БИТВА </header>
+    <main>
+        <div class="wrapper closed"> 
+            <div class="monster">  
+                <img src="./img/bes.jpg">
+                <div class="monster__characteristics">
+                    <ul>
+                        <li class="monster__name">
+                            Имя: <span></span>
+                        </li>
+                        <li class="monster__health"> 
+                            Здоровье: <span></span> XP
+                        </li>
+                        <li class="monster__armor-phys">
+                            Физическая броня: <span></span>% 
+                        </li>
+                        <li class="monster__armor-mag">
+                            Магическая броня: <span></span>% 
+                        </li>
+                        <li class="monster__skills"> 
+                            Умения: <span>Удар когтистой лапой</span><span> Огненное дыхание</span><span>Удар хвостом</span> 
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+       
+            <div class="versus">
+                <div class="versus__content"> 
+                </div>
+            </div>
+
+            <div class="mage">
+                <div class="mage__content">
+                    <img src="./img/evstafii.jpg">
+
+                    <div class="mage__characteristics">
+                        <ul>
+                            <li class="mage__name">
+                                Имя: <span></span> 
+                            </li>
+                            <li class="mage__health">
+                                Здоровье: <span></span> XP
+                            </li>
+                            <li class="mage__armor-phys">
+                                Физическая броня: <span></span>% 
+                            </li>
+                            <li class="mage__armor-mag">
+                                Магическая броня: <span></span>%
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mage__skills">
+                        <div class="mage__skill-content">
+                            <div class="skill"> 
+                                <button id=0> <span class="skill__name">Удар боевым кадилом</span></button>
+                                <div class="skill__info"></div>
+                            </div>
+                            <div class="skill"> 
+                                <button id=1> <span class="skill__name">Вертушка левой пяткой</span></button>
+                                <div class="skill__info"></div>
+                            </div>
+                            <div class="skill"> 
+                                <button id=2> <span class="skill__name">Каноничный фаербол</span></button>
+                                <div class="skill__info"></div>
+                            </div>
+                            <div class="skill"> 
+                                <button id=3> <span class="skill__name">Магический блок</span></button>
+                                <div class="skill__info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        <div class="modal">
+            <div class="modal__content">
+                  <div class="modal__title">Готовы играть?</div>
+                  <button class="btn btn__modal">Начать</button>
+            </div>
+        </div>  
+    </main>
+</body>
+<script type="module" src="script.js"></script>
+</html>

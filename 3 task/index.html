@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <title>3 task</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header closed">
+          <div> Компьютер загадывает число из нескольких различающихся цифр (от 3 до 6). 
+                Вам дается несколько попыток на то, чтобы угадать это число.
+          </div>
+      </header>
+        
+      <main class="main closed">
+          <form class="user" id='userNumber'>
+              <div class="user__content"> 
+                Введите ваше число: 
+                <input class="input" type="text">
+                <input class="btn" type="submit">
+              </div>
+          </form>
+          <div class="computer">
+              <div class="computer__content">
+                <div class="computer__number">Число компьютера: 
+                  <span class="computer__number-span"></span>
+                </div>
+                  <div class="attemptsLeft">Осталось попыток: 
+                    <span class="attemptsLeft__span">0</span>
+                  </div>
+                  <div class="computer__score"> Совпавших цифр не на своих местах -
+                    <span class="computer__number-coincide">0(0)</span>
+                  </div>
+                  <div class="computer__score"> Цифр на своих местах -
+                    <span class="computer__score-correct">0(0)</span>
+                  </div>
+              </div>
+          </div>
+       </main>
+    
+        <div class="modal">
+              <div class="modal__content">
+                    <div class="modal__title">Готовы играть?</div>
+                    <button class="btn btn__modal">Начать</button>
+              </div>
+        </div>   
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
